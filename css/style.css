@@ -1,99 +1,11 @@
-.jumbotron{
-  margin-bottom:0;
-}
+
 body {
-    font-family: Georgia, serif;
     padding-top: 95px;
-}
-p{
-  font-family: Verdana, sans-serif;
+    background-color: dimgray;
 }
 
-#j2{
-  background-color: #848ed8; #with pattern
-}
-#j3{
-  background-color: #00cdcd;
-}
-#j4{
-  background-color: white; #white with Patterns
-}
-#j5{
-  background-color: #f99d25; #with pattern
-}
-#j7{
-  background-color: white;
-}
-#j6{
-  background-color: white;
-}
-#j8{
-  height: 40px;
-  background-color: #848ed8;
-  text-align: center;
-  padding: 12px 20px 5px 7px;
-  color: white;
-  margin-bottom:0;
-}
 
 .navbar{
-  background-color: white;
-  color: #b7e5f7;
-  height: 100px;
-  padding: 30px 20px 5px 7px;
-}
-/* Style the list */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
+  height: 50px;
 }
 
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: inline;
-  font-size: 12px;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-  padding: 5px;
-  color: black;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-#headingPara{
-  font-size: small;
-}
-
-#message{
-  height: 200px;
-}
-
-#about{
-  height: 370px;
-}
-
-#class{
-  height: 370px;
-}
-
-#blog{
-  height: 370px;
-}
-
-#index{
-  text-align: center;
-}
