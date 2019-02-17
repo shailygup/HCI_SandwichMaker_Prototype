@@ -6,7 +6,211 @@ body {
 
 
 .navbar{
-  height: 50px;
   background-color: dimgray;
 }
+
+#main-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 10px; */
+  /* width: 50%; */
+}
+
+#content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar{
+  padding-right: 20px;
+}
+
+#image-click{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.col-sm-6:hover #image-click{
+  opacity: 0.3;
+}
+
+
+.container1:hover #image-click{
+  opacity: 0.3;
+}
+
+.col-sm-3:hover #image-click{
+  opacity: 0.3;
+}
+
+.navbar-brand:hover{
+  background-color: whitesmoke;
+  height: 67px;
+}
+
+input[type=checkbox].css-checkbox{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox1{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox2{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox3{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox4{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox5{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox6{ 
+  display: none; 
+}
+
+input[type=checkbox].css-checkbox7{ 
+  display: none; 
+}
+
+.css-label{
+    /* padding-left: 20px; */
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-image: url("../Images/cheddar_cheese.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.css-label1{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/white_cheese.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label2{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/lettuce.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label3{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/tomato.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label4{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/cucumber.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label5{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/jalapeno.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label6{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/turkey_meat.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css-label7{
+  /* padding-left: 20px; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url("../Images/bacon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+ background-position: 0 0;
+ border: 5px solid lightgray;
+ opacity: 0.3;
+}
+
+input[type=checkbox].css-checkbox1:checked + label.css-label1 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox2:checked + label.css-label2 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox3:checked + label.css-label3 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox4:checked + label.css-label4 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox5:checked + label.css-label5 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
+
+ input[type=checkbox].css-checkbox7:checked + label.css-label7 {
+  background-position: 0 0;
+  border: 5px solid lightgray;
+  opacity: 0.3;
+ }
 
