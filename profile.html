@@ -28,7 +28,7 @@
 
       <ul class="nav navbar-nav navbar-right" id="navbar">
         <li><a href="profile.html" id="main"><i class="far fa-user-circle fa-2x nav1" id="pro-icon"></i><span class="sr-only">(current)</span></a></li>
-        <li><a href="shopping_cart.html" id="main"><i class="fas fa-shopping-cart fa-2x" id="pro-icon"></i><span class="sr-only">(current)</span></a></li>
+        <li><a href="shopping_cart.html" id="main"><i class="fas fa-shopping-cart fa-2x" id="pro-icon"></i><span class="sr-only"></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   <!-- </div>/.container-fluid -->
@@ -37,13 +37,17 @@
   <div class="container">
       
       <br>
+      <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li id="SignInBR">Sign In</li>
+          </ul>
+          <hr>
       <br>
-      <div class="container">
-            <div class="container text-center" id="profile-container">
+      <div class="container2">
+            <div class="container2 text-center" id="profile-container">
                 <div id="signin">
                     <img src="Images/profile.png" class="img-responsive" id="main-image" alt="Sign IN"><br><br>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log In</button>
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log In</button> | Sign Up
                 </div>
                 
                 <div class="container" id="myDIV">
@@ -128,22 +132,29 @@
             // get the clock
             var profile = document.getElementById('myDIV');
             var profilePG = document.getElementById('signin');
+            var SignInBR = document.getElementById('SignInBR');
+            var profileBR = document.getElementById('profileBR');
         
             // get the current value of the clock's display property
             var displaySetting = profile.style.display;
         
             
         
-            // now toggle the clock and the button text, depending on current state
+            // now toggle the content and the button text, depending on current state
             if (displaySetting == 'block') {
-              // clock is visible. hide it
+              // content is visible. hide it
               profile.style.display = 'none';
               profilePG.style.display = 'block';
+              
+             
             }
             else {
-              // clock is hidden. show it
+              // content is hidden. show it
               profile.style.display = 'block';
               profilePG.style.display = 'none';
+              document.getElementById('SignInBR').innerHTML = "Profile Page";
+              
+              
             }
           }
         
@@ -162,7 +173,7 @@
           <p>Hazel Cha (A00713467) | Shaily Gupta (A00952989)</p>
           <br> <br><br><br><br>
           <!-- Copyright -->
-          © 2018 Copyright
+          © 2019 Copyright
           <!-- Copyright -->
     </div>
   </div>

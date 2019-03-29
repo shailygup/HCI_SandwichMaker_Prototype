@@ -1,14 +1,12 @@
 
 body {
     padding-top: 95px;
-    background-color: dimgray;
-    color: antiquewhite;
+    background-color: rgb(163, 162, 162);
+    color: white;
 }
 
 
-.navbar{
-  background-color: dimgray;
-}
+
 
 #main-image{
   display: block;
@@ -223,7 +221,7 @@ input[type=checkbox].css-checkbox1:checked + label.css-label1 {
  }
 
  #main{
-   color: antiquewhite;
+   color: black;
  }
 
  #main:hover{
@@ -247,11 +245,12 @@ h4{
 }
 
 #pro-icon{
-  color: antiquewhite;
+  color: black;
 }
 
 .navbar{
-  background-color: grey;
+  background-color:#D4D7FE;
+  color: black;
 }
 
 #pro-icon:hover{
@@ -264,7 +263,7 @@ h4{
 }
 
 #profile-container{
-  background-color: antiquewhite;
+  background-color: white;
   padding-top: 2%;
   padding-bottom: 2%;
   color: #787878;
@@ -325,4 +324,41 @@ h4{
   width: 70%;
   border-left: none;
   height: 300px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 8px 10px;
+  list-style: none;
+  background-color: #eee;
+  color: #787878
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 10px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 1px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: none;
+}
+
+#profileBR{
+  display: none;
 }
