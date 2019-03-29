@@ -2,6 +2,7 @@
 body {
     padding-top: 95px;
     background-color: dimgray;
+    color: antiquewhite;
 }
 
 
@@ -45,13 +46,20 @@ body {
   opacity: 0.3;
 }
 
+.container1{
+  padding-top: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-stretch: wider;
+  margin-bottom: 1%;
+}
+
 .col-sm-2:hover #image-click{
   opacity: 0.3;
 }
 
 .navbar-brand:hover{
   background-color: whitesmoke;
-  height: 67px;
+  height: 60px;
 }
 
 input[type=checkbox].css-checkbox{ 
@@ -214,3 +222,107 @@ input[type=checkbox].css-checkbox1:checked + label.css-label1 {
   opacity: 0.3;
  }
 
+ #main{
+   color: antiquewhite;
+ }
+
+ #main:hover{
+  /* background-color: lightgray; */
+  color: black;
+}
+
+#main-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-stretch: wider;
+}
+
+h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-stretch: wider;
+}
+
+.button1{
+  background-color: dimgray;
+  color: antiquewhite;
+}
+
+#pro-icon{
+  color: antiquewhite;
+}
+
+.navbar{
+  background-color: grey;
+}
+
+#pro-icon:hover{
+  color: gray;
+}
+
+.cart a{
+  height: 35px;
+  text-decoration: none;
+}
+
+#profile-container{
+  background-color: antiquewhite;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #787878;
+}
+
+.modal-content{
+  color: black;
+}
+
+#myDIV{
+  display: none;
+}
+
+#profile-image{
+  align-content: center;
+}
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}

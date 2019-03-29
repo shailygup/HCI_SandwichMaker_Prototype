@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Haily's Sandwich</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar  navbar-fixed-top">
+  <!-- <div class="container-fluid"> -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="main"  href="index.html">Haily's Sandwich</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right" id="navbar">
+        <li><a href="profile.html" id="main"><i class="far fa-user-circle fa-2x nav1" id="pro-icon"></i><span class="sr-only">(current)</span></a></li>
+        <li><a href="shopping_cart.html" id="main"><i class="fas fa-shopping-cart fa-2x" id="pro-icon"></i><span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  <!-- </div>/.container-fluid -->
+</nav>
+
+  <div class="container">
+      
+      <br>
+      <br>
+      <div class="container">
+            <div class="container text-center" id="profile-container">
+                <div id="signin">
+                    <img src="Images/profile.png" class="img-responsive" id="main-image" alt="Sign IN"><br><br>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log In</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                </div>
+                
+                <div class="container" id="myDIV">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="Images/profile-page.png" class="img-responsive" id="profile-image" alt="Profile Page"><br>
+                        </div>
+                        <div class="col-sm-">
+                            <span> <h2>Profile Place holder: User Name</h2></span>
+                        </div>
+                    </div>
+                    
+                    <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'basicInformation')" id="defaultOpen">Basic Information</button>
+                            <button class="tablinks" onclick="openCity(event, 'orders')">Orders</button>
+                            <button class="tablinks" onclick="openCity(event, 'Security')">Security</button>
+                          </div>
+                          
+                          <div id="basicInformation" class="tabcontent">
+                            <h3>Basic Information</h3>
+                            <p>Coming Soon...</p>
+                          </div>
+                          
+                          <div id="orders" class="tabcontent">
+                            <h3>Orders</h3>
+                            <p>Comming Soon...</p> 
+                          </div>
+                          
+                          <div id="Security" class="tabcontent">
+                            <h3>Security</h3>
+                            <p>Coming Soon...</p>
+                          </div>
+                        
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Sign In Now</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+                                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" onclick="toggleVis()">Log In</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+      </div>
+
+      <script>
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+    </script>
+      <script type="text/javascript">
+        function toggleVis() {
+            // get the clock
+            var profile = document.getElementById('myDIV');
+            var profilePG = document.getElementById('signin');
+        
+            // get the current value of the clock's display property
+            var displaySetting = profile.style.display;
+        
+            
+        
+            // now toggle the clock and the button text, depending on current state
+            if (displaySetting == 'block') {
+              // clock is visible. hide it
+              profile.style.display = 'none';
+              profilePG.style.display = 'block';
+            }
+            else {
+              // clock is hidden. show it
+              profile.style.display = 'block';
+              profilePG.style.display = 'none';
+            }
+          }
+        
+     </script>
+     
+  </div>
+  <br><br><br><br><br><br><br>
+  <hr/>
+    
+  <!-- Footer -->
+<div id="footer">
+    <div class=" text-center ">
+          <!-- Content -->
+          <h5 class="text-uppercase">COMP7021: HCI Final Project</h5>
+          <br>
+          <p>Hazel Cha (A00713467) | Shaily Gupta (A00952989)</p>
+          <br> <br><br><br><br>
+          <!-- Copyright -->
+          © 2018 Copyright
+          <!-- Copyright -->
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+</body>
+</html>
