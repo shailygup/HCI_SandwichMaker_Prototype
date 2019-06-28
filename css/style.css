@@ -362,3 +362,9 @@ ul.breadcrumb li a:hover {
 #profileBR{
   display: none;
 }
+
+#cart-proto{
+  height: 80%;
+  width: 80%;
+  padding-left: 23%;
+}
