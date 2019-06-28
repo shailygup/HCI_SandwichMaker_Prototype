@@ -331,13 +331,13 @@ ul.breadcrumb {
   padding: 8px 10px;
   list-style: none;
   background-color: #eee;
-  color: #787878
+  color: black
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
